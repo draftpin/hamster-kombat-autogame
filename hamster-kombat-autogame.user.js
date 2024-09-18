@@ -16,7 +16,7 @@
 const gBot = { 
 	logPrefix: 'Hamster Upgrader',
 	cards: {
-		maxPaybackHours: 3000,
+		maxPaybackHours: 6000,
 		maxLevel: 25
 	},
 	keysUrl: 'https://hamster.gamedrive.pro/keys.json',
