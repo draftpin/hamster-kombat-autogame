@@ -4,7 +4,7 @@
 // @exclude-match 	*://*hamsterkombatgame.io/games/*
 // @icon         	https://hamsterkombatgame.io/images/icons/hamster-coin.png
 // @grant       	none
-// @version     	3.6
+// @version     	3.7
 // @author      	Ergamon
 // @description 	Updated: 17.09.2024 (started 03.08.2024, 15:20:47)
 // @downloadURL  https://github.com/draftpin/hamster-kombat-autogame/raw/main/hamster-kombat-autogame.user.js
