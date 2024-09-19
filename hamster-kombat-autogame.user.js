@@ -4,7 +4,7 @@
 // @exclude-match 	*://*hamsterkombatgame.io/games/*
 // @icon         	https://hamsterkombatgame.io/images/icons/hamster-coin.png
 // @grant       	none
-// @version     	3.8
+// @version     	3.9
 // @author      	Ergamon
 // @description 	Updated: 17.09.2024 (started 03.08.2024, 15:20:47)
 // @downloadURL  https://github.com/draftpin/hamster-kombat-autogame/raw/main/hamster-kombat-autogame.user.js
@@ -16,7 +16,7 @@
 const gBot = { 
 	logPrefix: 'Hamster Upgrader',
 	cards: {
-		maxPaybackHours: 9000,
+		maxPaybackHours: 15000,
 		maxLevel: 25
 	},
 	keysUrl: 'https://hamster.gamedrive.pro/keys.json',
@@ -236,6 +236,8 @@ const runTask = {
 			await waitMs(1000)
 			const keysPrefixes = [] // [ 'TRIM', 'RACE', 'POLY', 'TWERK', 'MERGE', 'CLONE', 'CUBE', 'TRAIN', 'BIKE' ]
 			const key2gameTitles = {
+				FCTRY: 'Factory World',
+				INFCT: 'Infected Frontier',
 				RACE: 'Mud Racing',
 				TWERK: 'Twerk Race'
 			}
