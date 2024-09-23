@@ -4,7 +4,7 @@
 // @exclude-match 	*://*hamsterkombatgame.io/games/*
 // @icon         	https://hamsterkombatgame.io/images/icons/hamster-coin.png
 // @grant       	none
-// @version     	3.9
+// @version     	4.0
 // @author      	Ergamon
 // @description 	Updated: 17.09.2024 (started 03.08.2024, 15:20:47)
 // @downloadURL  https://github.com/draftpin/hamster-kombat-autogame/raw/main/hamster-kombat-autogame.user.js
@@ -133,7 +133,8 @@ function autoRestart() {
 }
 
 async function getDailyTaskButton(timeout) {
-	return await waitElement('[srcset="/images/attraction/daily_reward.webp"]', timeout)
+	// return await waitElement('[srcset="/images/attraction/daily_reward.webp"]', timeout)
+	return await waitElement('[href$="earn"]', timeout)
 }
 
 async function getDailyRewardButtonReady() {
@@ -694,7 +695,7 @@ async function getKeys() {
 window.navigation.addEventListener("navigate", (event) => {
 	const url = new URL(event.destination.url)
 
-	if (url.href.includes('minigames') && !gTimers.minigame) {
+	if (url.href.includes('playground') && !gTimers.minigame) {
 		gTimers.minigame = setInterval(patchMiniGames, 1000)
 	} else {
 		clearInterval(gTimers.minigame)
